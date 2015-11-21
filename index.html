@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Senati-project</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	
+	<nav class="height-nav">
+    <div class="nav-wrapper  pink darken-1 padd-3">
+      <a href="#" class="brand-logo "><div class="img-url"></div></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="">Nosotros</a></li>
+        <li><a href="">Ubicanos</a></li>
+        <li><a href="">Contacto</a></li>
+        <li><a href="">Inicio</a></li>
+      </ul>
+    </div>
+  </nav>
+	
+	<div class="parallax-container">
+    <div class="parallax">
+    
+    <img class="z-2" src="http://images6.fanpop.com/image/photos/35800000/space-best-club-ever-35883904-1920-1080.jpg">
+
+    <div class="black-baner"></div>
+    <div class="x">Bienvenido</div>
+   </div>
+  </div>
+  <div class="section white">
+    <div class="row container">
+      <h2 class="header">Parallax</h2>
+      <p class="grey-text text-darken-3 lighten-3">Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.</p>
+    </div>
+  </div>
+  <div class="parallax-container">
+    <div class="parallax"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTymQzoWVzaLt7enccQcRGRO1amxEV9Knz1XBV9eV-I415f6ZPR"></div>
+  </div>
+
+  <div class="section white no-padding">
+    <style>div#map{height: 390px; width: 100%;}</style>
+        <div id="map"></div>
+  </div>
+
+  <footer class="page-footer pink darken-1">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+</body>
+	<script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+	<script type="text/javascript">
+		 $(document).ready(function(){
+		    $('.parallax').parallax();
+		    });
+	</script>
+
+  <script type="text/javascript">
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -12.0639306, lng: -77.037984},
+    zoom: 18.25
+  });
+}
+
+    </script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMRsGlTKaRdoHo2aqhnDxPW626Pz_NGM&callback=initMap">
+    </script>
+</html>
