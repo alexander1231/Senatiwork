@@ -1,15 +1,16 @@
+
 .height-nav {
-  height: 114px; }
+  height: 86px; }
 
 .padd-3 {
-  padding-top: 30px; }
+  padding-top: 10px; }
 
 .img-url {
   background: url("../img/flame_128_white.png") center;
   background-size: 80px;
   height: 80px;
   width: 80px;
-  margin: -15px 0 0 30px; }
+  margin: -10px 0 0 30px; }
 
 .z-2 {
   z-index: -2; }
@@ -36,6 +37,10 @@
   .cuadro-img{
     width: 100%;
     height: 350px;
+  }
+
+  .green-body{
+    background: #C8E6C9;
   }
 
 /*# sourceMappingURL=style.css.map */

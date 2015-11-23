@@ -9,19 +9,19 @@
 	
 </head>
 <body>
-	
+	<div class="navbar-fixed">
 	<nav class="height-nav">
-    <div class="nav-wrapper  green darken-3 padd-3">
+    <div class="nav-wrapper  green padd-3">
       <a href="#" class="brand-logo "><div class="img-url"></div></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="">Nosotros</a></li>
-        <li><a href="">Ubicanos</a></li>
-        <li><a href="">Contacto</a></li>
-        <li><a href="">Inicio</a></li>
+        <li><a href="#team">Nosotros</a></li>
+        <li><a href="#map">Ubicanos</a></li>
+        <li><a href="">Intranet</a></li>
+        <li><a href=""></a></li>
       </ul>
     </div>
   </nav>
-	
+	</div>
 	<div class="parallax-container">
     <div class="parallax">
     
@@ -31,7 +31,7 @@
     <div class="x">Bienvenido</div>
    </div>
   </div>
-  <div class="section white">
+  <div class="section green lighten-5">
     <div class="row container">
       <h2 class="header">La Mejor Preparación</h2>
       
@@ -107,13 +107,13 @@
     <div class="parallax"><img src="http://3minutosinforma.com/wp-content/uploads/2015/02/HARVARD.jpg"></div>
   </div>
 
-  <div class="section white">
+  <div class="section green lighten-5">
     <div class="row container">
-      <h2 class="header">Team Developers</h2>
+      <h2 class="header" id="team">Team Developers</h2>
       
         <div class="row">
         <div class="col s12 m4">
-            <div class="card">
+            <div class="card" >
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-xpa1/v/t1.0-9/11214314_116896538647557_229583900744470320_n.jpg?oh=1573267f289fdc3371d7bad88a4d368f&oe=56EC0247&__gda__=1457527674_39017345ea9127e2d64fe6b253932a02">
               </div>
@@ -203,7 +203,7 @@
         <div id="map"></div>
   </div>
 
-  <footer class="page-footer pink darken-1">
+  <footer class="page-footer green darken-2">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
@@ -248,8 +248,8 @@
           var map = new google.maps.Map(document.getElementById('map'), {
             scaleControl: true,
             center: senati,
-            scrollwheel: true,
             zoom: 18
+
           });
 
           var infowindow = new google.maps.InfoWindow;
