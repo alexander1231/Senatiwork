@@ -198,7 +198,7 @@
 
 
 
-  <div class="section white no-padding">
+  <div class="section white no-padding" id="map-canvas">
     <style>div#map{height: 390px; width: 100%;}</style>
         <div id="map"></div>
   </div>
@@ -239,16 +239,28 @@
 
   <script type="text/javascript">
 
-var map;
-function initMap() {
-  map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -12.0639306, lng: -77.037984},
-    zoom: 18.25
-  });
-}
+       
+        
+        function initMap() {
+          var senati = {lat: -12.06411, lng: -77.038657};
+      
 
+          var map = new google.maps.Map(document.getElementById('map'), {
+            scaleControl: true,
+            center: senati,
+            zoom: 18
+          });
+
+          var infowindow = new google.maps.InfoWindow;
+          infowindow.setContent('<b>Holi Boli</b>');
+
+          var marker = new google.maps.Marker({map: map, position: senati});
+          marker.addListener('click', function() {
+            infowindow.open(map, marker);
+          });
+        }
     </script>
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMRsGlTKaRdoHo2aqhnDxPW626Pz_NGM&callback=initMap">
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAeMRsGlTKaRdoHo2aqhnDxPW626Pz_NGM&callback=initMap" async defer>
     </script>
 </html>
