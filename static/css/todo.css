@@ -1,0 +1,39 @@
+body{
+	background: #4CAF50;
+}
+
+.alex-bot{
+width: 1346px;
+margin-bottom:0px;
+height: 500px;
+}
+.alex-log{
+width: 80px;
+}
+.alex-bt{
+width: 100%;
+height: 30px;
+margin-bottom: 0px;
+}
+.alex-line{
+border-top: dashed;
+border-color: white;
+padding: 24px;
+}
+.alex-h1{
+margin-bottom: 5px;
+}
+.input-field label {
+color: #fff;
+}
+.input-field input[type=text]:focus + label {
+color: #000;
+}
+.input-field input[type=text]:focus {
+border-bottom: 1px solid #fff;
+box-shadow: 0 1px 0 0 #fff;
+}
+.alex-foot{
+height: 69px;
+width: 100%;
+}

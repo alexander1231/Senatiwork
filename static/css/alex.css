@@ -1,0 +1,24 @@
+.alx-bot{
+padding-top: 0px;
+}
+.alx-h1{
+margin-bottom: 5px;
+}
+.alx-line{
+border-top: dashed;
+border-color: black;
+}
+.input-field label {
+color: #000;
+}
+.input-field input[type=text]:focus + label {
+color: #000;
+}
+.input-field input[type=text]:focus {
+border-bottom: 1px solid #000;
+box-shadow: 0 1px 0 0 #000;
+}
+.alex-log{
+height: 500px;
+width: 500px;
+}
